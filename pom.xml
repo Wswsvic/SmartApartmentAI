@@ -30,26 +30,66 @@
         <java.version>17</java.version>
     </properties>
     <dependencies>
+        <!-- Spring Web：提供 RESTful API 和 MVC 框架，内置 Tomcat 服务器 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-webmvc</artifactId>
         </dependency>
 
+        <!-- Spring Data JPA：提供与数据库交互的抽象层，支持多种数据库 -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+
+        <!-- Spring Boot Test：提供测试支持，包括 JUnit、Mockito 和 Spring TestContext 框架 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-webmvc-test</artifactId>
             <scope>test</scope>
         </dependency>
 
+        <!-- MyBatis-Plus：MyBatis 增强工具，简化 CRUD，提供代码生成器和分页插件 -->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-spring-boot3-starter</artifactId>
             <version>3.5.10.1</version>
+        </dependency>
+
+        <!-- Druid：阿里巴巴开源的数据库连接池，提供监控和性能优化功能 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>1.1.17</version>
+        </dependency>
+
+        <!-- OpenAPI 3.0：提供 API 文档生成和交互式测试界面 -->
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
+            <version>4.4.0</version>
+        </dependency>
+
+        <!-- MySQL Connector/J：MySQL 数据库的 JDBC 驱动 -->
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <!-- MyBatis-Plus Generator：MyBatis-Plus 的代码生成器，自动生成实体类、Mapper 接口和 XML 文件 -->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-generator</artifactId>
+            <version>3.5.15</version>
+        </dependency>
+
+        <!-- Velocity Engine Core：MyBatis-Plus Generator 依赖的模板引擎 -->
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity-engine-core</artifactId>
+            <version>2.3</version>
         </dependency>
 
     </dependencies>
