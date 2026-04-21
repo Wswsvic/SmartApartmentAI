@@ -35,6 +35,7 @@ build/
 #敏感配置
 application-dev.yml
 application-prod.yml
+app;ication-local.yml
 
 #docker数据卷（database文件）
 data/
